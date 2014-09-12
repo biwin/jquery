@@ -1,0 +1,35 @@
+.x-landing{
+	padding: 0px;
+}
+.landing-bg{
+
+}
+.x-first{
+	z-index: 2;
+}
+.x-img{
+	position: fixed;
+	right: 50%;
+}
+
+.y-img{
+	position: relative;
+	left: 20%;
+}
+.text-1{
+	position: absolute;
+	right: 50px;
+	top: 245px;
+}
+.text-2{
+	position: absolute;
+	right: 50px;
+	top: 807px;
+}
+.text-header{
+	font-family: "Kozuka Gothic Pro EL", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+.text-header-sub{
+	font-family: "Kozuka Gothic Pro EL", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
