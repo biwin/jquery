@@ -8,14 +8,37 @@
 	<link rel="stylesheet" href="../assets/style.css"/>
 	<script src="http://localhost/jquery-2.1.1.js"></script>
 	<script src="../assets/foundation.min.js"></script>
+	<style>
+		#notice {
+			display: none;
+		}
+	</style>
 </head>
 <body>
 
 <div class="row-fluid">
-	<div class="small-12 fl-19 stuff">
+	<div id="warning" class="small-12 fl-2 stuff">
+		we will track your position.
+		<input type="button" id="hideButton" value="okay got it" />
+
+	</div>
+</div>
+
+<input type="button" id="showButton" value="show notice" />
+
+<div class="row-fluid">
+	<div id="notice" class="small-12 fl-5 stuff">
+		we will track your position.
+	</div>
+</div>
 
 
 
+<!--<input type="button" id="toggleButton" value="hide" />-->
+<a type="button" id="toggleButton" value="hide"  class="button">Default Button</a>
+<div class="row-fluid">
+	<div id="togg" class="small-12 fl-6 stuff">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur autem earum eos est facere facilis id iure iusto laborum minima nemo nihil optio pariatur, quibusdam repudiandae sequi similique tempore?
 	</div>
 </div>
 
@@ -23,6 +46,34 @@
 <script>
 
 	$(document).ready(function(){
+
+		$('#hideButton').click(function(){
+			$('#warning').hide(); //this if to hide the button!
+		});
+
+		$('#showButton').click(function(){
+			$('#notice').show(); //this if to hide the button!
+		});
+
+//
+//		$('#toggleButton').click(function(){
+//			if( $('#togg').is(':visible') ){
+//					$('#togg').hide();
+//				} else {
+//					$('#togg').show();
+//				}
+//		});
+
+		$('#toggleButton').click(function(){
+
+			$('#togg').toggle();
+
+			if ($('#togg').is(':visible')){
+				$(this).val('Hide');
+			} else {
+				$(this).val('Show');
+			}
+		});
 
 	});
 
