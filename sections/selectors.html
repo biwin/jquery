@@ -33,8 +33,63 @@
 </div>
 
 
+<div class="fl-13 list">
+	<h3>this is a heading no 1</h3>
+
+	<h3>this is a heading no 2</h3>
+
+	<h3>this is a heading no 3</h3>
+
+	<h3>this is a heading no 4</h3>
+
+	<h3>this is a heading no 5</h3>
+
+	<h3>this is a heading no 6</h3>
+
+	<h3>this is a heading no 7</h3>
+
+	<h3>this is a heading no 8</h3>
+
+	<h3>this is a heading no 9</h3>
+
+	<code>
+		$('.list h3:odd').css('color','white');<br/>
+		//changes the properties of the odd h3 in the list div.
+	</code>
+</div>
+
+<div class="lols win-1">
+	<p class="hihihi">Lorem ipsum dolor sit amet.</p>
+
+	<p class="hehehe">Lorem ipsum dolor sit amet.</p>
+
+	<p class="huhuhu">Lorem ipsum dolor sit amet.</p>
+
+	<p class="hahaha">Lorem ipsum dolor sit amet.</p>
+
+	<code>
+		$('.lols p').css('color','white');<br/>
+		//changes the color of the paras in the div .lol <br/><br/>
+
+		$('.hihihi,.hehehe,.huhuhu,.hahaha').css('fontSize','2em');<br/>
+		//selects multiple elements.
+	</code>
+</div>
+
+
 <script>
-	$('p').css('color','blue')
+	$('p').css('color','blue');
+	$(document).ready(function(){
+		$('.list h3:odd').css('color','white');
+		//changes the properties of the odd h3 in the list div.
+
+		$('.lols p').css('color','white');
+		//changes the color of the paras in the div .lol
+
+		$('.hihihi,.hehehe,.huhuhu,.hahaha').css('fontSize','2em');
+		//selects multiple elements.
+	});
+
 </script>
 
 
