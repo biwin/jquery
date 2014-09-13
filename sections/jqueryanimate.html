@@ -15,18 +15,45 @@
 <body>
 
 <div class="row-fluid">
-	<div class="small-12 fl-4 h-2">
-
+	<div class="small-12 fl-4">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa dolore doloremque earum esse et, harum hic inventore ipsam nemo neque, nobis porro quae quaerat quam quisquam rerum similique ut!</p>
+	</div>
+	<div class="navigation">
+		this is the navigation.
 	</div>
 </div>
 
 
 
+<div id="tope" class="fl-23">
+	<h1>Something in the water!!</h1>
+
+</div>
 
 <script>
 
 	$(document).ready(function(){
+		$('p').animate({
+			padding: '20px',
+			fontSize: '10px'
+		}, 'fast');
 
+		$('.navigation').mouseover(function(){
+			$(this).animate({fontSize:'+=2px', lineHeight: '+=1px' },200);
+
+		});
+
+		$('#tope').animate({
+			opacity :   'hide',
+			width   :   'hide',
+			height  :   'hide'
+		}, 5000);
+
+		// linear and swing
+
+		$('.lolan').animate({'opacity':'hide'}, 9000);
+		//swing by default
+		$('.lallel').animate({'opacity':'hide'}, 9000, 'linear');
 
 	});
 
