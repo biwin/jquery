@@ -55,11 +55,13 @@
 <script>
 
 	$(document).ready(function(){
+		var $ = jQuery;
 		// toggles fade/slide animations on click
 		$('#buttonz').click(function(){
 			$('.idea').fadeOut('slow', function(){
-			//function is a call back performed when the the eventis fired
-				$('.ideas').addClass("h-1").html("Why You did this to me?? :(");          $('#buttonz').addClass('disabled').text("you suck")
+			//function is a call back performed when the the event is fired
+				$('.ideas').addClass("h-1").html("Why You did this to me?? :(");
+				$('#buttonz').addClass('disabled').text("you suck")
 			});
 		});
 
