@@ -25,10 +25,10 @@
 </div>
 
 <script>
-
+	var count = 0;
 	$(document).ready(function(){
 		$(document).scroll(function(){
-			$('#header').append("Kenaj Kanaj ")
+			$('#header').append(count = count + 1 , " ")
 		});
 
 	});
