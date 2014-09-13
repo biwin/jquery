@@ -52,10 +52,24 @@
 
 		</div>
 	</div>
+
+
+<button id="hideButton"> hi i </button>
+<div id="stufff">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis dignissimos dolores enim error inventore, neque possimus quod? Accusantium alias animi architecto blanditiis commodi ea eaque eius eveniet excepturi facere illum incidunt ipsum magnam molestias nemo obcaecati, quam quasi quia sint, tenetur ut velit veniam voluptate. A, aliquam asperiores beatae consectetur dolorem dolorum enim error fugiat, harum illum in inventore ipsa labore laboriosam molestias, mollitia nemo neque nobis nostrum nulla officia pariatur perferendis perspiciatis porro praesentium qui quibusdam quisquam reiciendis rem sequi similique sint temporibus tenetur unde vero vitae voluptatem! Ad deleniti, dolorem eius error obcaecati quos recusandae voluptates? A aliquam dicta dolorum eos error, ipsam laboriosam molestiae molestias necessitatibus nesciunt obcaecati odio praesentium qui quia quibusdam sed totam. Dicta fugiat odio provident.
+</div>
+
+
 <script>
 
 	$(document).ready(function(){
 		var $ = jQuery;
+
+		$('#stufff').slideUp('slow', function() {
+			$('#hideButton').fadeOut();
+		});
+
+
 		// toggles fade/slide animations on click
 		$('#buttonz').click(function(){
 			$('.idea').fadeOut('slow', function(){
