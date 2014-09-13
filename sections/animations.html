@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Lessons</title>
+	<link rel="stylesheet" href="../assets/normalize.css"/>
+	<link rel="stylesheet" href="../assets/foundation.css"/>
+	<link rel="stylesheet" href="../assets/colorcode.css"/>
+	<link rel="stylesheet" href="../assets/style.css"/>
+	<script src="http://localhost/jquery-2.1.1.js"></script>
+	<script src="../assets/foundation.min.js"></script>
+	<style>
+		/* custom styles here */
+	</style>
+</head>
+<body>
+
+<marquee behavior="" direction="left"> You are my life nothing can take your place!! #Alive </marquee>
+
+
+<div class="row-fluid">
+	<div class="small-12 fl-4 h-2">
+		<a id="buttonz" href="#" class="button small alert">ClickMe</a>
+
+		<div class="small-12 h-1 fl-2 idea">
+			<h3>This is good!</h3>
+		</div>
+		<div class="small-12 fl-2 ideas">
+
+		</div>
+
+	</div>
+</div>
+
+
+<h2>hover effects</h2>
+
+	<div class="row-fluid">
+
+		<div id="one" class="small-3 columns fl-7 h-1">
+
+		</div>
+
+		<div id="two" class="small-3 columns fl-8 h-1">
+
+		</div>
+
+		<div id="three" class="small-3 columns fl-9 h-1">
+
+		</div>
+
+		<div id="four" class="small-3 columns fl-11 h-1">
+
+		</div>
+	</div>
+<script>
+
+	$(document).ready(function(){
+		// toggles fade/slide animations on click
+		$('#buttonz').click(function(){
+			$('.idea').fadeOut('slow', function(){
+			//function is a call back performed when the the eventis fired
+				$('.ideas').addClass("h-1").html("Why You did this to me?? :(");          $('#buttonz').addClass('disabled').text("you suck")
+			});
+		});
+
+
+		// on hover functions
+
+//		$('#one').mouseover(function(){
+//			$(this).addClass('fl-12')
+//		});
+//		$('#one').mouseout(function(){
+//			$(this).removeClass('fl-12')
+//		});
+//
+//		$('#two').mouseover(function(){
+//			$(this).addClass('fl-19')
+//		});
+//		$('#two').mouseout(function(){
+//			$(this).removeClass('fl-19')
+//		});
+//
+//		$('#three').mouseover(function(){
+//			$(this).addClass('fl-20')
+//		});
+//		$('#three').mouseout(function(){
+//			$(this).removeClass('fl-20')
+//		});
+//
+//		$('#four').mouseover(function(){
+//			$(this).addClass('fl-18')
+//		});
+//
+//		$('#four').mouseout(function(){
+//			$(this).removeClass('fl-18')
+//		});
+
+
+		$('#one').mouseover(function(){
+			$(this).toggleClass('fl-12')
+		});
+
+		$('#two').mouseover(function(){
+			$(this).toggleClass('fl-19')
+		});
+
+
+		$('#three').mouseover(function(){
+			$(this).toggleClass('fl-20')
+		});
+
+
+		$('#four').mouseover(function(){
+			$(this).toggleClass('fl-18')
+		});
+
+
+
+
+	});
+
+</script>
+
+
+
+<script src="../assets/jquery-lessons.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
