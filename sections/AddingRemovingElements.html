@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Lessons</title>
+	<link rel="stylesheet" href="../assets/normalize.css"/>
+	<link rel="stylesheet" href="../assets/foundation.css"/>
+	<link rel="stylesheet" href="../assets/colorcode.css"/>
+	<link rel="stylesheet" href="../assets/style.css"/>
+	<script src="http://localhost/jquery-2.1.1.js"></script>
+	<script src="../assets/foundation.min.js"></script>
+	<style>
+		#notice {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+<marquee behavior="" direction="left"> You wont let go so I will follow with all I am #youbroughtmebacktolife </marquee>
+<div class="row-fluid">
+	<div id="warning" class="small-12 fl-2 stuff">
+
+
+	</div>
+	<div id="disclaimer" class="win-13">
+		this is a disclaimer
+		<br/>
+		insertAfter inserts after
+		<br/>
+		insertBefore inserts before the id/class
+	</div>
+
+
+	<div id="remove" class="win-3">
+		jQuery will remove this after the page load
+	</div>
+
+	<div id="lolan">
+		this is a lolan!!
+	</div>
+
+</div>
+
+<p id="no-script">
+	We recommend that you have JavaScript enabled!
+</p>
+
+
+<p class="textIng">
+
+</p>
+
+
+<script>
+
+	$(document).ready(function(){
+		$('<input type="button" value="toggle" id="toggleButton">')
+				.insertBefore('#disclaimer');
+		$('#toggleButton').click(function() {
+			$('#disclaimer').toggle();
+		});
+
+
+		//adds a div on the given location with the given data
+		$('<div>', {
+			id: 'specialButton',
+			text: 'Click Me!',
+			click: function(){
+				alert("Advanced jQuery!");
+			}
+		}).insertBefore('#disclaimer');
+
+
+		// adds an h1 on the given location
+		$('<h1>',{
+			id: 'addedbyme',
+			text:"DlalachDlalaman",
+			click: function(){
+				alert('Sorry Dude!!! *scowl* Don\'t click here!!!');
+			}
+		}).insertAfter('#disclaimer');
+
+		// removes the selections.
+		$('#remove').remove();
+
+
+		//	Prepends and appends the stuff in the given locations
+		$("<strong>START</strong>").prependTo('#lolan');
+		$("<strong>STOP</strong>").appendTo('#lolan');
+
+
+		//removes the id when js is on!!
+		$('#no-script').remove();
+
+
+		//adds the html on the selected place.
+		$(".textIng").html('<h2>This is not good dude!!</h2>')
+
+
+//		alert($('#disclaimer').text())
+
+	});
+
+</script>
+
+
+
+<script src="../assets/jquery-lessons.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
