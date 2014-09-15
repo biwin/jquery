@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Lessons</title>
+	<link rel="stylesheet" href="../assets/normalize.css"/>
+	<link rel="stylesheet" href="../assets/foundation.css"/>
+	<link rel="stylesheet" href="../assets/colorcode.css"/>
+	<link rel="stylesheet" href="../assets/style.css"/>
+	<script src="http://localhost/jquery-2.1.1.js"></script>
+	<script src="../assets/foundation.min.js"></script>
+	<style>
+		/* custom styles here */
+		p { margin:10px;
+			padding:5px;
+			border:2px solid #666;
+		}
+		.njak{
+			position:relative;
+			float : left;
+		}
+	</style>
+</head>
+<body>
+
+<div class="row-fluid">
+	<div class="small-4 columns h-3 fl-4 njeknjak">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?
+
+	</div>
+	<div class="small-8 njak">
+
+	</div>
+</div>
+
+<script>
+	$('.njeknjak').css({
+		'overflow' : 'scroll',
+	});
+
+	$(document).ready(function(){
+
+
+		$('.njeknjak').scroll(function(){
+			var scroll = $('.njeknjak').scrollTop();
+			$('.njak').append(scroll + " ");
+
+		});
+
+
+	});
+
+
+</script>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
