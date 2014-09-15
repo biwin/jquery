@@ -27,8 +27,11 @@
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias amet corporis cum debitis deserunt doloremque eos expedita impedit ipsum, maxime obcaecati perferendis, reiciendis repudiandae rerum saepe totam, voluptas?
 
 	</div>
-	<div class="small-8 njak">
+	<div class="small-2 columns njak">
 
+	</div>
+	<div class="small-6 fl-3 columns erach">
+	<h1>Kazhakkar!!!</h1>
 	</div>
 </div>
 
@@ -40,9 +43,18 @@
 	$(document).ready(function(){
 
 
+
 		$('.njeknjak').scroll(function(){
 			var scroll = $('.njeknjak').scrollTop();
+
+			if (scroll >= 250){
 			$('.njak').append(scroll + " ");
+
+				if (scroll >= 299){
+					$('.erach').slideToggle('fast');
+				}
+			}
+
 
 		});
 
