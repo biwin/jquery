@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<title>Jquery Animate</title>
+		<link rel="stylesheet" href="../assets/normalize.css"/>
+		<link rel="stylesheet" href="../assets/foundation.css" />
+		<script src="../assets/jquery-1.4.3.js"></script>
+		<link rel="stylesheet" href="../assets/colorcode.css">
+		<style>
+
+		</style>
+	</head>
+<body>
+
+
+
+<div class="row">
+	<div class="column fl-14 h-2">
+		<div class="fl-14 h-1 lolan">
+			<div id="hide-this">
+				<h1>Don't click this button!</h1>
+			</div>
+		</div>
+		<button id="hidebutton" class="alert">
+			click me
+		</button>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+<script>
+	$(document).ready(function(){
+		$('#hidebutton').click(function(){
+
+			$('#hide-this').fadeTo('slow', 0.1, 'swing', function(){
+				$(this).html("<H1>Hu Hu Hu!!</H1>");
+
+			});
+
+		});
+	});
+
+
+
+
+
+</script>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

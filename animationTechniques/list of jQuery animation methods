@@ -1,0 +1,16 @@
+animate
+clearQueue
+delay
+dequeue
+fadein
+fadeout --
+fadeto  --
+fadetoggle
+hide
+queue
+show
+slidedown
+slidetoggle
+slideup
+stop
+toggle
